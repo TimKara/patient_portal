@@ -1,0 +1,11 @@
+version: '2'
+services:
+  patientportal-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/PatientPortal/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=PatientPortal
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
